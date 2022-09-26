@@ -7,6 +7,8 @@ b = input('Введите знак:')
 
 cal = int(input('Введите второе число:'))
 
+answir = None
+
 if b == '+':
     answir = a + cal
 
