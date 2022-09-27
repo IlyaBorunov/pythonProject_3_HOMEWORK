@@ -5,38 +5,39 @@ a = int(input('Введите первое число:'))
 
 b = input('Введите знак:')
 
-cal = int(input('Введите второе число:'))
+c = int(input('Введите второе число:'))
 
-answir = None
+answer = None
+if b == '/' and c == 0:
+    answer = ' На ноль делить нельзя '
 
-if b == '+':
-    answir = a + cal
+elif b == '+':
+    answer = a + c
 
 elif b == '-':
-    answir = a - cal
+    answer = a - c
 
 elif b == '/':
-    answir = a / cal
+    answer = a / c
 
 elif b == '*':
-    answir = a * cal
+    answer = a * c
 
 elif b == '**':
-    answir = a ** cal
+    answer = a ** c
 
-print('Ваш ответ:', answir)
+print('Ваш ответ:', answer)
 
 print('-----------------------------------------------------------------')
 
 # Решение 2 задачи!!))
 
 print('Дорогой пользователь, введите начальное и конечное число:')
-aa = int(input('Начальное:'))
-bb = int(input('Конечное:'))
+first_num = int(input('Начальное:'))
+second_num = int(input('Конечное:'))
 
-
-for i in range(aa, bb):
-    if i**2 <= bb:
+for i in range(first_num, second_num):
+    if i**2 <= second_num:
         print(i**2, end=' ')
 print()
 print('-----------------------------------------------------------------')
@@ -54,3 +55,4 @@ elif n % 2 == 0 or n % 3 ==0 or n % 4 == 0 or n % 5 == 0 or n % 6 == 0 or n % 7 
     print(f'{n} - Составное')
 else:
     print(f'{n} - Простое')
+
